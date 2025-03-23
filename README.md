@@ -5,7 +5,7 @@
 **Domicilios Express** es una sitio web diseñada para facilitar la gestión de entregas rápidas en la ciudad de Ibagué, Tolima. La aplicación permite a los clientes solicitar la recogida y entrega de paquetes o pedidos de manera eficiente y segura. Nuestro enfoque es proporcionar un servicio confiable, utilizando vehículos, motocicletas, y bicicletas para satisfacer las necesidades de nuestros usuarios.
 
 ## Interfaz
-![alt text](src/img/screenshots/home.png)
+![alt text](src/assets/screenshots/home.png)
 ## Funcionalidades
 
 - **Inicio**: Página de bienvenida con información general sobre los servicios ofrecidos.
@@ -27,24 +27,27 @@
 ├── public/
 │   ├── index.html
 ├── src/
+│   ├── Assets/
+│   │   ├── icon
+│   │   ├── img
+│   │   ├── screenshots
 │   ├── Components/
+│   │   ├── Footer.css
+│   │   ├── Footer.jsx
+│   │   ├── Header.css
+│   │   ├── Header.jsx
+│   ├── Pages/
+│   │   ├── Contacto.js
 │   │   ├── Inicio.js
-│   │   ├── Servicios.js
 │   │   ├── Domicilios.js
 │   │   ├── Nosotros.js
-│   │   ├── Contacto.js
+│   │   ├── Servicios.js
 │   ├── Styles/
 │   │   ├── Inicio.css
 │   │   ├── Servicios.css
 │   │   ├── Domicilios.css
 │   │   ├── Nosotros.css
 │   │   ├── Contacto.css
-│   ├── img/
-│   │   ├── img-inicio.jpg
-│   │   ├── img-servicios.jpg
-│   │   ├── img-domicilios.jpg
-│   │   ├── img-nosotros.jpg
-│   │   ├── img-contacto.jpg
 │   ├── App.js
 │   ├── App.css
 │   ├── index.js
