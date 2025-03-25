@@ -1,39 +1,45 @@
+/* CSS para la pagina Domicilios */
+
+/* Contenedor principal */
 .domicilios-container {
   padding: 60px 40px;
-  background: linear-gradient(to right, #abcbf372, #abcbf39f, #73b1fcbf);
+  background: linear-gradient(to right, #7b7b7bca, #f9f9f9);
   color: #333;
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
+/* Título principal */
 .domicilios-container h2 {
   font-size: 3rem;
-  color: #333;
   margin-bottom: 40px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   background: linear-gradient(to right, #333, #ff6347);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/* Subtítulos */
 .domicilios-container h3 {
   font-size: 2rem;
-  color: #333;
+  color: #ff6347;
   margin: 40px 0 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
+/* Párrafos descriptivos */
 .domicilios-container p {
   font-size: 1.2rem;
   margin-bottom: 30px;
   line-height: 1.8;
   max-width: 800px;
   margin: 0 auto 30px;
-  color: #444;
+  color: #666;
 }
 
+/* Imagen */
 .domicilios-container img {
   width: 100%;
   max-width: 800px;
@@ -43,6 +49,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Lista ordenada */
 .domicilios-container ol {
   list-style-position: inside;
   margin-bottom: 30px;
@@ -66,6 +73,7 @@
   transform: translateY(-5px);
 }
 
+/* Lista no ordenada */
 .domicilios-container ul {
   list-style-type: none;
   padding: 0;
@@ -87,23 +95,99 @@
   transform: translateY(-5px);
 }
 
+/* Enlace estilizado como botón */
 .order-button {
-  background-color:#ff6347;
+  background-color: #ff6347;
   color: #fff;
   padding: 15px 30px;
-  border: none;
   border-radius: 10px;
-  cursor: pointer;
   font-size: 1.1rem;
-  text-transform: uppercase;
   transition: background-color 0.3s ease;
-}
-
-.order-button a {
+  display: inline-block;
   text-decoration: none;
-  color: #fff;
 }
 
 .order-button:hover {
   background-color: #ff4500;
+}
+
+
+/* Responsive para dispositivos de hasta 768px */
+@media (max-width: 768px) {
+  .domicilios-container {
+    padding: 40px 20px;
+  }
+  
+  .domicilios-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .domicilios-container h3 {
+    font-size: 1.8rem;
+    margin: 30px 0 15px;
+  }
+  
+  .domicilios-container p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  
+  .domicilios-container img {
+    margin: 20px 0;
+  }
+  
+  .domicilios-container ol,
+  .domicilios-container ul {
+    max-width: 90%;
+    padding-left: 10px;
+  }
+  
+  .domicilios-container ol li,
+  .domicilios-container ul li {
+    font-size: 1rem;
+    padding: 15px;
+  }
+  
+  .order-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+/* Responsive para dispositivos de hasta 480px */
+@media (max-width: 480px) {
+  .domicilios-container {
+    padding: 30px 10px;
+  }
+  
+  .domicilios-container h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  
+  .domicilios-container h3 {
+    font-size: 1.6rem;
+    margin: 25px 0 10px;
+  }
+  
+  .domicilios-container p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  .domicilios-container img {
+    margin: 15px 0;
+  }
+  
+  .domicilios-container ol li,
+  .domicilios-container ul li {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+  
+  .order-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
 }
