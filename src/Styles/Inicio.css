@@ -1,5 +1,6 @@
+/* CSS para la pagina de Inicio */
 #inicio {
-  background-image: url("../img/fondo-inicio.jpg");
+  background-image: url("../assets/img/fondo-inicio.webp");
   background-color: #333;
   background-position: center center;
   background-size: cover;
@@ -42,7 +43,7 @@
   line-height: 1.6;
 }
 
-/* Boton */
+/* Botón */
 .div-boton {
   display: flex;
   justify-content: center;
@@ -51,11 +52,10 @@
 .boton-contacto {
   padding: 15px 30px;
   border-radius: 5px;
-  border: none;
+  text-decoration: none;
   background-color: #ff6347;
   color: #fff;
   font-size: 1.2rem;
-  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
@@ -63,7 +63,49 @@
   background-color: #ff4500;
 }
 
-.boton-contacto a {
-  color: #fff;
-  text-decoration: none;
+/* Responsive para dispositivos moviles*/
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 2.5rem;
+  }
+  .content p {
+    font-size: 1.2rem;
+  }
+  .boton-contacto {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Ajuste de estilos en dispositivos móviles */
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 2.5rem;
+  }
+  .content p {
+    font-size: 1.2rem;
+  }
+  .boton-contacto {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Responsive dispositivos de hasta 480px */
+@media (max-width: 480px) {
+  .content {
+    padding: 15px;
+  }
+  .content h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .content p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .boton-contacto {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
 }
