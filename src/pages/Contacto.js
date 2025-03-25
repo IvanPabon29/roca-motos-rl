@@ -1,26 +1,39 @@
 // Contacto.js
 import React from 'react';
 import '../Styles/Contacto.css';
-import ImgContacto from '../img/img-contacto.jpg';
+import ImgContacto from '../assets/img/img-contacto.webp';
 
+/**
+ * Componente de Contacto.
+ * Muestra la información de contacto, un formulario, una imagen y la ubicación en un mapa.
+ */
 const Contacto = () => {
   return (
-    <div className="contacto-container">
+    <section className="contacto-container">
       <h2>Contacto</h2>
-      <p>¿Tienes alguna duda o consulta? Contáctanos a través del siguiente formulario o visítanos en nuestra ubicación. Estamos aquí para ayudarte con cualquier solicitud o pregunta que puedas tener.</p>
+      <p>
+        ¿Tienes alguna duda o consulta? Contáctanos a través del siguiente formulario o visítanos en
+        nuestra ubicación. Estamos aquí para ayudarte con cualquier solicitud o pregunta que puedas tener.
+      </p>
 
-      <img src={ImgContacto} title='Img-Contacto' alt='contacto' />
-      
+      <img src={ImgContacto} title="Img-Contacto" alt="Contacto" loading="lazy" />
+
       <h3>Formulario de Contacto</h3>
       <form className="contact-form">
-        <input type="text" placeholder="Nombre" required />
-        <input type="email" placeholder="Correo electrónico" required />
-        <textarea placeholder="Tu mensaje" required></textarea>
+        <label htmlFor="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Nombre" required autoComplete="name" />
+
+        <label htmlFor="email">Correo electrónico:</label>
+        <input type="email" id="email" placeholder="Correo electrónico" required autoComplete="email" />
+
+        <label htmlFor="mensaje">Mensaje:</label>
+        <textarea id="mensaje" placeholder="Tu mensaje" required autoComplete="off"></textarea>
+
         <button type="submit">Enviar</button>
       </form>
-      
+
       <h3>Información de Contacto</h3>
-      <p><strong>Teléfono:</strong> +57 123 456 7890</p>
+      <p><strong>Teléfono:</strong> +57 312 456 7890</p>
       <p><strong>Email:</strong> info@domiciliosexpress.com</p>
       <p><strong>Dirección:</strong> Manzana H Casa 17, Barrio Vasconia Reservado, Ibagué, Tolima</p>
 
@@ -36,9 +49,8 @@ const Contacto = () => {
           loading="lazy"
         ></iframe>
       </div>
-    </div>
+    </section>
   );
 };
 
 export default Contacto;
-
