@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import "../Styles/Inicio.css";
 
+/**
+ * Componente de presentación para la sección de inicio de la aplicación.
+ * Muestra un mensaje de bienvenida y un enlace para contactar.
+ */
 function Inicio() {
   return (
     <section id="inicio">
@@ -13,9 +17,10 @@ function Inicio() {
             utilizando vehículos, motos y bicicletas para llegar a cualquier lugar.
           </p>
           <div className="div-boton">
-            <button className="boton-contacto">
-              <Link to="/contacto">Contáctanos</Link>
-            </button>
+            {/* Enlace estilizado como botón */}
+            <Link className="boton-contacto" to="/contacto">
+              Contáctanos
+            </Link>
           </div>
         </div>
       </div>
