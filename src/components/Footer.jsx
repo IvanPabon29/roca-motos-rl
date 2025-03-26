@@ -1,37 +1,62 @@
+// Footer.js
 import './Footer.css'; 
-import facebook from "../img/facebook.png";
-import whatsapp from "../img/whatsapp.png";
-import instagram from "../img/instagram.png";
+import facebook from "../assets/icon/facebook.svg";
+import whatsapp from "../assets/icon/whatsapp.svg";
+import instagram from "../assets/icon/instagram.svg";
 import { Link } from 'react-router-dom';
 
+/**
+ * Componente Footer
+ * 
+ * Muestra la información de contacto de la empresa, enlaces rápidos y redes sociales.
+ */
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
         <div className="row">
-          <div className="col-md-4">
+          {/* Sección: Acerca de Nosotros */}
+          <div className="col-md-4 footer-section">
             <h4>Acerca de Nosotros</h4>
             <p>Todo lo que necesites, donde lo necesites, ¡en minutos!</p>
             <p>Contacto: info@domiciliosexpress.com</p>
-            <p>Telefono: +57 123 456 7890</p>
+            <p>Teléfono: +57 312 456 7890</p>
           </div>
-          <div className="col-md-4">
+          
+          {/* Sección: Enlaces Rápidos */}
+          <div className="col-md-4 footer-section">
             <h4>Enlaces Rápidos</h4>
-            <ul className='enlaces'>
+            <ul className="enlaces">
               <li><Link to="/servicios">Servicios</Link></li>
               <li><Link to="/domicilios">Domicilios</Link></li>
               <li><Link to="/contacto">Contacto</Link></li>
             </ul>
           </div>
-          <div className="col-md-4">
+          
+          {/* Sección: Redes Sociales */}
+          <div className="col-md-4 footer-section">
             <h4>Síguenos</h4>
             <ul className="social-icons">
-              <li><a href="#"><img src={facebook} className="fab fa-facebook-f"/></a></li>
-              <li><a href="#"><img src={instagram} className="fab fa-instagram" /></a></li>
-              <li><a href="#"><img src={whatsapp} className="fab fa-whatsapp" /></a></li>
+              <li>
+                <a href="#" aria-label="Facebook">
+                  <img src={facebook} alt="Icono Facebook" title="Facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="Instagram">
+                  <img src={instagram} alt="Icono Instagram" title="Instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="Whatsapp">
+                  <img src={whatsapp} alt="Icono Whatsapp" title="Whatsapp" />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
+        
+        {/* Sección: Copyright */}
         <div className="copyright">
           <p>© {new Date().getFullYear()} Domicilios Express. Todos los derechos reservados.</p>
         </div>
