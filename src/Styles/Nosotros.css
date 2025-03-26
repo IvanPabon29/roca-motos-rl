@@ -1,16 +1,14 @@
+/* Contenedor principal */
 .nosotros-container {
   background-color: #f0f0f0;
   color: #fff;
-  img{
-    width: 750px;
-  }
 }
 
-/* Overlay */
+/* Overlay que contiene todo el contenido */
 .overlay-nosotros {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,6 +17,7 @@
   text-align: center;
 }
 
+/* Título principal */
 .nosotros-container h2 {
   font-size: 3rem;
   color: #fff;
@@ -26,10 +25,11 @@
   text-transform: uppercase;
   letter-spacing: 1.5px;
   background: #ff6347;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/* Subtítulos */
 .nosotros-container h3 {
   font-size: 2rem;
   color: #ff6347;
@@ -38,15 +38,25 @@
   letter-spacing: 1px;
 }
 
+/* Párrafos descriptivos */
 .nosotros-container p {
   font-size: 1.2rem;
   color: #f0f0f0;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   line-height: 1.8;
   max-width: 800px;
-  margin: 0 auto 30px;
 }
 
+/* Imagen del equipo */
+.img-nosotros {
+  width: 750px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+/* Lista de valores */
 .nosotros-container ul {
   list-style-type: none;
   padding: 0;
@@ -69,7 +79,63 @@
   transform: translateY(-5px);
 }
 
+/* Negritas */
 .nosotros-container strong {
-  color: #ffd700;
   font-weight: bold;
+}
+
+/* Responsive para dispositivos de hasta 768px */
+@media (max-width: 768px) {
+  .nosotros-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  .nosotros-container h3 {
+    font-size: 1.8rem;
+    margin: 30px 0 15px;
+  }
+
+  .nosotros-container p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .img-nosotros {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .nosotros-container ul li {
+    font-size: 1rem;
+    padding: 15px;
+  }
+}
+
+/* Responsive para dispositivos de hasta 480px */
+@media (max-width: 480px) {
+  .nosotros-container h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  .nosotros-container h3 {
+    font-size: 1.6rem;
+    margin: 25px 0 10px;
+  }
+
+  .nosotros-container p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .img-nosotros {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .nosotros-container ul li {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
 }
