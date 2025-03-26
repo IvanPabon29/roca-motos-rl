@@ -1,3 +1,4 @@
+/* Contenedor principal */
 .servicios-container {
   padding: 60px 40px;
   background: linear-gradient(to right, #fecd7961, #fecd7994, #fecd79);
@@ -6,6 +7,7 @@
   text-align: center;
 }
 
+/* Título principal */
 .servicios-container h2 {
   font-size: 3rem;
   color: #333;
@@ -13,10 +15,11 @@
   text-transform: uppercase;
   letter-spacing: 1.5px;
   background: linear-gradient(to right, #333, #ff6347);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/* Subtítulos */
 .servicios-container h3 {
   font-size: 2rem;
   color: #333;
@@ -25,6 +28,7 @@
   letter-spacing: 1px;
 }
 
+/* Párrafos descriptivos */
 .servicios-container p {
   font-size: 1.2rem;
   margin-bottom: 30px;
@@ -34,6 +38,7 @@
   color: #444;
 }
 
+/* Imágenes */
 .servicios-container img {
   width: 100%;
   max-width: 800px;
@@ -43,6 +48,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Listas sin orden */
 .servicios-container ul {
   list-style-type: none;
   padding: 0;
@@ -50,6 +56,7 @@
   margin: 0 auto;
 }
 
+/* Elementos de la lista */
 .servicios-container li {
   background: rgba(51, 51, 51, 0.3);
   margin: 15px 0;
@@ -65,11 +72,13 @@
   transform: translateY(-5px);
 }
 
+/* Estilos para el texto en negrita */
 .servicios-container strong {
   color: #ff6347;
   font-weight: bold;
 }
 
+/* Sección de beneficios (estilos adicionales) */
 .servicios-container .benefits-section {
   background: rgba(255, 255, 255, 0.564);
   color: #333;
@@ -94,4 +103,66 @@
   border-radius: 50%;
   border: 3px solid #333;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive para dispositivos de hasta 768px */
+@media (max-width: 768px) {
+  .servicios-container {
+    padding: 40px 20px;
+  }
+  
+  .servicios-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .servicios-container h3 {
+    font-size: 1.8rem;
+    margin: 30px 0 15px;
+  }
+  
+  .servicios-container p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  
+  .servicios-container img {
+    margin: 20px 0;
+  }
+  
+  .servicios-container li {
+    font-size: 1rem;
+    padding: 15px;
+  }
+}
+
+/* Responsive para dispositivos de hasta 480px */
+@media (max-width: 480px) {
+  .servicios-container {
+    padding: 30px 10px;
+  }
+  
+  .servicios-container h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  
+  .servicios-container h3 {
+    font-size: 1.6rem;
+    margin: 25px 0 10px;
+  }
+  
+  .servicios-container p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  .servicios-container img {
+    margin: 15px 0;
+  }
+  
+  .servicios-container li {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
 }
