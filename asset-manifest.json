@@ -1,25 +1,24 @@
 {
   "files": {
-    "main.css": "/domicilios-express/static/css/main.7048894f.css",
-    "main.js": "/domicilios-express/static/js/main.6c4f26d7.js",
-    "static/media/equipo.jpg": "/domicilios-express/static/media/equipo.dee20faef3f87a83b619.jpg",
-    "static/media/img-contacto.jpg": "/domicilios-express/static/media/img-contacto.68eeae89e368a62f8877.jpg",
-    "static/media/fondo-inicio.jpg": "/domicilios-express/static/media/fondo-inicio.42548b3e75f3e1443070.jpg",
-    "static/media/repartidor.jpg": "/domicilios-express/static/media/repartidor.56124313ea1d4c5db4d1.jpg",
-    "static/media/img-domicilios.jpg": "/domicilios-express/static/media/img-domicilios.7b72cd8715392a97aed9.jpg",
-    "static/media/servicios.jpg": "/domicilios-express/static/media/servicios.5d1dc5f517f3ecd67977.jpg",
-    "static/media/ibagué.jpg": "/domicilios-express/static/media/ibagué.182fe7aa1f3a2331e12c.jpg",
-    "static/media/flota.jpg": "/domicilios-express/static/media/flota.7e47e8b199e3fe9a2c73.jpg",
-    "static/media/instagram.png": "/domicilios-express/static/media/instagram.79535458a8a6d88f81d4.png",
-    "static/media/logo.png": "/domicilios-express/static/media/logo.0e162993481223831f26.png",
-    "static/media/whatsapp.png": "/domicilios-express/static/media/whatsapp.d026940870fb334920b7.png",
-    "static/media/facebook.png": "/domicilios-express/static/media/facebook.49e67d43221b6bb1aa86.png",
+    "main.css": "/domicilios-express/static/css/main.4b619299.css",
+    "main.js": "/domicilios-express/static/js/main.faea7a06.js",
+    "static/media/equipo.webp": "/domicilios-express/static/media/equipo.cf16afabcaa537b4b263.webp",
+    "static/media/img-contacto.webp": "/domicilios-express/static/media/img-contacto.2035af0ef5f92ed6d9fe.webp",
+    "static/media/fondo-inicio.webp": "/domicilios-express/static/media/fondo-inicio.6dd5cc23059d9d1ddf51.webp",
+    "static/media/repartidor.webp": "/domicilios-express/static/media/repartidor.e1df38de29853d347b99.webp",
+    "static/media/img-domicilios.webp": "/domicilios-express/static/media/img-domicilios.5266d3f05667e0491551.webp",
+    "static/media/ibague.webp": "/domicilios-express/static/media/ibague.27c2237dd23d9523534d.webp",
+    "static/media/flota.webp": "/domicilios-express/static/media/flota.6aa679641dc55700c869.webp",
+    "static/media/instagram.svg": "/domicilios-express/static/media/instagram.78b41888e44caa3e5aaa126d0d2fb495.svg",
+    "static/media/logo.webp": "/domicilios-express/static/media/logo.f846dbb2854f76600b78.webp",
+    "static/media/whatsapp.svg": "/domicilios-express/static/media/whatsapp.c47649333180d18227fa2ec4533f23ff.svg",
+    "static/media/facebook.svg": "/domicilios-express/static/media/facebook.2efc51e44983a4005500e838fbae9be4.svg",
     "index.html": "/domicilios-express/index.html",
-    "main.7048894f.css.map": "/domicilios-express/static/css/main.7048894f.css.map",
-    "main.6c4f26d7.js.map": "/domicilios-express/static/js/main.6c4f26d7.js.map"
+    "main.4b619299.css.map": "/domicilios-express/static/css/main.4b619299.css.map",
+    "main.faea7a06.js.map": "/domicilios-express/static/js/main.faea7a06.js.map"
   },
   "entrypoints": [
-    "static/css/main.7048894f.css",
-    "static/js/main.6c4f26d7.js"
+    "static/css/main.4b619299.css",
+    "static/js/main.faea7a06.js"
   ]
 }
