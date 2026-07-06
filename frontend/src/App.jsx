@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Inicio from './pages/Inicio';
 import Productos from './pages/Productos';
 import Nosotros from './pages/Nosotros';
@@ -28,6 +29,9 @@ function App() {
             <Route path="/contacto" element={<Contacto />} />
           </Routes>
         </main>
+
+        {/* Footer con fondo oscuro y navegación integrada */}
+        <Footer />
 
       </div>
     </Router>
