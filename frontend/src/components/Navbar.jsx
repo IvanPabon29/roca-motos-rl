@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logoImg from '../assets/logo.webp'; 
 
 /**
  * Componente de Navegación Superior (Navbar)
@@ -23,8 +24,19 @@ const Navbar = () => {
           
           {/* LOGO */}
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="text-2xl font-black tracking-wider text-white uppercase">
-              Moto<span className="text-vintage-verde italic font-serif">Vintage</span>
+            <Link 
+              to="/" 
+              className="flex items-center space-x-3 text-xl sm:text-2xl font-black tracking-wider text-white uppercase group"
+            >
+              <img 
+                src={logoImg} 
+                alt="Ebenezer Motor's RL" 
+                title="Ebenezer Motor's RL"
+                className="h-12 w-auto rounded-xl object-cover border border-white/10"
+              />
+              <span>
+                Ebenezer<span className="text-vintage-verde italic font-serif font-normal"> Motor’s RL</span>
+              </span>
             </Link>
           </div>
 
