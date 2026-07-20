@@ -19,7 +19,7 @@ const Footer = () => {
           {/* Bloque 1: Identidad Corporativa Provisional */}
           <div className="space-y-4 text-center md:text-left">
             <span className="text-xl font-black tracking-wider uppercase">
-              Moto<span className="text-vintage-verde italic font-serif">Vintage</span>
+              Ebenezer <span className="text-vintage-verde italic font-serif">Motor’s RL</span>
             </span>
             <p className="text-vintage-crema/60 text-sm max-w-sm mx-auto md:mx-0 leading-relaxed">
               Tu aliado confiable en la ruta. Proveemos componentes seleccionados de alta calidad para que tu motocicleta nunca se detenga.
@@ -67,7 +67,7 @@ const Footer = () => {
         {/* Sección Inferior de Derechos de Autor */}
         <div className="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-vintage-crema/40 font-medium tracking-wide space-y-2 sm:space-y-0">
           <p>
-            &copy; {añoActual} MotoVintage. Todos los derechos reservados.
+            &copy; {añoActual} Ebenezer Motor’s RL. Todos los derechos reservados.
           </p>
           <p className="font-mono">
             Diseñado & Desarrollado By Ivan Pabon
