@@ -35,7 +35,7 @@ const Navbar = () => {
                 className="h-12 w-auto rounded-xl object-cover border border-white/10"
               />
               <span>
-                Ebenezer<span className="text-vintage-verde italic font-serif font-normal"> Motor’s RL</span>
+                Roca <span className="text-vintage-verde italic font-serif font-normal">Motos RL</span>
               </span>
             </Link>
           </div>
