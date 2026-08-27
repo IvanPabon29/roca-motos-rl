@@ -1,19 +1,20 @@
 import { createClient } from '@sanity/client';
-import imageUrlBuilder from '@sanity/image-url';
+import { createImageUrlBuilder } from '@sanity/image-url';
 
 /**
  * Configuración del cliente oficial de Sanity para el Frontend.
  * Permite realizar consultas GROQ a la base de datos en la nube.
  */
 export const client = createClient({
-  projectId: '2ue8c30w', 
-  dataset: 'production',
-  apiVersion: '2026-07-07', // Cambia a la fecha actual del desarrollo para evitar avisos de obsolescencia
-  useCdn: true, // true usa la caché global de Sanity (respuestas en milisegundos, ideal para producción)
+  // Lee las credenciales desde el archivo .env 
+  projectId: import.meta.env.VITE_SANITY_PROJECT_ID,
+  dataset: import.meta.env.VITE_SANITY_DATASET,
+  apiVersion: '2026-08-27',
+  useCdn: true, // usa la caché global de Sanity (respuestas en milisegundos)
 });
 
 // Inicializador del constructor de URLs para archivos multimedia
-const builder = imageUrlBuilder(client);
+const builder = createImageUrlBuilder(client);
 
 /**
  * Helper para transformar las referencias de imágenes de Sanity en URLs HTTP legibles.
