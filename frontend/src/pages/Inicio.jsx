@@ -74,7 +74,7 @@ const Inicio = () => {
   ];
 
   return (
-    <div className="space-y-20 pb-16">
+    <div className="space-y-11 pb-16">
       
       {/* 1. SECCIÓN HERO (COMPONENTE MODULAR) */}
       <Hero />
@@ -130,7 +130,7 @@ const Inicio = () => {
               Respaldo & Compromiso
             </span>
             <h2 className="text-3xl font-black uppercase tracking-wider">
-              ¿Por qué comprar en <span className="text-vintage-verde italic font-serif font-normal">Ebenezer</span>?
+              ¿Por qué comprar en <span className="text-vintage-verde italic font-serif font-normal">Roca Motos</span>?
             </h2>
           </div>
 
