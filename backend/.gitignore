@@ -27,3 +27,7 @@
 
 # Dotenv and similar local-only files
 *.local
+
+# Variables de entorno locales
+.env
+.env.*
