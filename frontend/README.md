@@ -1,16 +1,37 @@
-# React + Vite
+# ⚛️ Roca Motos RL - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interfaz web para la tienda y catálogo de repuestos de **Roca Motos RL**, desarrollada con React, Vite y Tailwind CSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tecnologías y Librerías
 
-## React Compiler
+* **Core:** React 18 + Vite
+* **Estilos:** Tailwind CSS
+* **Navegación:** React Router DOM
+* **CMS Client:** `@sanity/client` y `@sanity/image-url`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧩 Integración con Sanity
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+El frontend está preparado para consumir contenido desde Sanity, permitiendo gestionar productos, categorías y contenido visual desde un CMS sin necesidad de modificar el código cada vez.
+
+Los datos se consumen a través de `@sanity/client` y las imágenes se resuelven con `@sanity/image-url`.
+
+---
+
+## ⚙️ Variables de Entorno
+
+Asegurarse de tener un archivo `.env` en la raíz de esta carpeta con la siguiente estructura:
+
+VITE_SANITY_PROJECT_ID=tu_project_id
+VITE_SANITY_DATASET=production
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia definida por el equipo de Roca Motos RL.
+
+---
