@@ -1,51 +1,49 @@
-import React from 'react';
-import heroImg from '../assets/hero.png'; // Importación de la imagen 
+import { Link } from 'react-router-dom';
 
 /**
- * Componente Hero Section
- * Presentación principal de la tienda con tipografía fuerte y estética de taller clásico.
+ * Componente Hero Section - Diseño Minimalista e Imagen Realista
  */
 const Hero = () => {
+  // Imagen real de taller/repuestos de motocicletas (Unsplash)
+  const imagenMecanica = "https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dGFsbGVyJTIwZGUlMjBtb3Rvc3xlbnwwfHwwfHx8MA%3D%3D";
+
   return (
-    <section id="inicio" className="relative bg-vintage-crema overflow-hidden border-b border-vintage-grisClaro py-12 md:py-24">
+    <section id="inicio" className="relative bg-vintage-crema border-b border-vintage-grisClaro/60 py-6 sm:py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           
           {/* COLUMNA IZQUIERDA: TEXTO Y LLAMADO A LA ACCIÓN */}
-          <div className="text-center md:text-left space-y-6">
-            <span className="inline-block px-3 py-1 bg-vintage-verde/10 text-vintage-verde font-bold text-xs uppercase tracking-widest rounded">
+          <div className="flex flex-col justify-center items-center text-center lg:items-start lg:text-left space-y-4">
+            <span className="inline-block px-3 py-0.5 bg-vintage-verde/10 border border-vintage-verde/30 text-vintage-verde font-bold text-xs uppercase tracking-widest rounded-md">
               Repuestos & Accesorios Para Tu Moto
             </span>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-vintage-grisOscuro uppercase tracking-tight leading-none">
-              Pura esencia <br />
-              <span className="text-vintage-cafe font-serif italic normal-case font-normal">Mecánica</span> para tu moto
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-vintage-grisOscuro uppercase tracking-tight leading-tight">
+              El camino es tuyo<br />
+              <span className="text-vintage-verde font-serif italic normal-case font-normal">Nosotros</span> lo equipamos.
             </h1>
             
-            <p className="text-base sm:text-lg text-vintage-grisOscuro/70 max-w-xl mx-auto md:mx-0 leading-relaxed">
+            <p className="text-sm sm:text-base text-vintage-grisOscuro/80 max-w-lg leading-relaxed">
               Encuentra el catálogo de repuestos de alta rotación para mantener tu motocicleta en perfecto estado. Calidad garantizada, atención experta y asesoría directa por WhatsApp.
             </p>
             
-            <div className="pt-4">
-              <a
-                href="/productos"
-                className="inline-block px-8 py-4 bg-vintage-verde hover:bg-vintage-cafe text-white font-bold tracking-widest text-sm uppercase rounded shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
+            <div className="pt-2 w-full sm:w-auto">
+              <Link
+                to="/productos"
+                className="inline-block w-full sm:w-auto text-center px-7 py-3 bg-vintage-verde hover:bg-vintage-cafe text-white font-bold tracking-widest text-xs uppercase rounded-lg shadow-sm transition-colors duration-200"
               >
                 Explorar Catálogo
-              </a>
+              </Link>
             </div>
           </div>
 
-          {/* COLUMNA DERECHA: IMAGEN CON MARCO VINTAGE */}
-          <div className="flex justify-center w-full">
-            <div className="relative w-full max-w-md md:max-w-full aspect-square md:aspect-video lg:aspect-square bg-vintage-grisClaro rounded-2xl border-4 sm:border-8 border-white shadow-2xl overflow-hidden group">
-              {/* Overlay suave para integrar la imagen al tono vintage */}
-              <div className="absolute inset-0 bg-vintage-cafe/5 mix-blend-multiply z-10 pointer-events-none" />
-              
+          {/* COLUMNA DERECHA: IMAGEN REAL SIN BORDES ANCHOS */}
+          <div className="flex justify-center items-center w-full">
+            <div className="w-full max-w-lg rounded-xl overflow-hidden shadow-sm bg-vintage-grisClaro">
               <img
-                src={heroImg}
-                alt="Repuestos de motocicletas vintage"
-                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                src={imagenMecanica}
+                alt="Taller y repuestos de motocicleta Ebenezer Motor's RL"
+                className="w-full h-[260px] sm:h-[340px] lg:h-[380px] object-cover object-center"
                 loading="eager"
               />
             </div>
