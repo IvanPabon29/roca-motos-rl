@@ -103,12 +103,7 @@ const Productos = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
           </div>
-          <label htmlFor="busqueda" className="sr-only">
-            Buscar repuestos
-          </label>
           <input
-            id="busqueda"
-            name="busqueda"
             type="text"
             placeholder="Buscar por nombre de repuesto o modelo de moto (Ej: NKD, Pulsar, Apache, etc)..."
             value={busqueda}
